@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  get 'articles/index'
 
-  get 'articles/show'
+  resources :articles
 
-  get 'articles/create'
-
-  get 'articles/edit'
+  root to: 'articles#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
